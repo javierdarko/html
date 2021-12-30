@@ -1,61 +1,79 @@
 *{
-    margin: 0.625rem;
-    padding: 0.625rem;
     box-sizing: border-box;
+    margin: .001rem;
+    padding: .001rem;
 }
- .padre{
- display:flex;
- flex-flow: column nowrap;
-}
-    .header{
-    background: #000;
-     }
-    .menu{
-         background-color: #1A374D;
-         }
-    .logo{
-        background-color: #406882;
-         }
-    .nav{
-        background-color: #406882;
-         }
-    .social{
-        background-color: #406882;
-    }
-    .texto-principal{
-        background-color: #6998AB;
 
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
     }
     h1{
-        background-color: #B1D0E0;
+        justify-content: center;
+        display: flex;
+        flex-flow: row;
     }
-    .section{
-    background-color: #000;
+    .p1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
     }
-    .articulos{
-        background-color: #009DAE;
-    }
-    .article{
-        background: #71DFE7;
-    }
-    .navegacion{
-        background: #C2FFF9;
-    }
-    .aside{
-        background-color: #FFE652 ;
+    
+    header{
+        padding: 3.125rem;
+        background-color: #97BFB4;
+        text-align: center;
     }
 
-    .publicidad{
-        background-color: #06FF00;
-    }
-    .footer{
-        background: #000;
+    nav{
+        display: flex;
+        flex-direction: row;
+        background-color: #4F091D;
 
     }
-    .pie{
-        background-color: #FF1700;
+    nav a{
+        color: whitesmoke;
+        padding:0.875rem 1.25rem;
+        text-align: center;
+        }
+    nav a:hover{
+        background-color: #52303a;
     }
 
-
-/* #009DAE #71DFE7 #C2FFF9 #FFE652
-*/
+    .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    aside{
+        flex: 1.875rem;
+        background-color: #DD4A48;
+        padding: 0.875rem;
+    }
+    section{
+        flex: 1.875rem;
+        background-color: #F5EEDC;
+        padding: 0.875rem;
+    }
+    footer{
+        padding: 0.875rem;
+        text-align: center;
+        background-color: #97BFB4;
+    }
+    @media screen and (max-width: 43.75rem) {
+        nav, .row{
+            flex-direction: column;
+        }
+    }
+    /*Rotar imagenes
+    .rotate{
+        animation: rotation 9s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }}*/
+        
+   
