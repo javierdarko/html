@@ -1,43 +1,61 @@
 *{
     box-sizing: border-box;
-    margin: .001rem;
-    padding: .001rem;
+    margin: 0;
+    min-width: 300px;
+
 }
 
     body{
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #000;
     }
-    h1{
-        justify-content: center;
+
+    .ph1{
         display: flex;
-        flex-flow: row;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #00005C;
     }
-    .p1{
+    .p1{ display: flex;
+        justify-content: center;
+        background-color: #6A097D; /*37525f*/
+        border: .3rem solid #000;
         font-family: Arial, Helvetica, sans-serif;
         color: whitesmoke;
     }
+    .p2{ display: flex;
+        justify-content: center;
+        background-color:  #DB2D43; /*37525f*/
+        border: .3rem solid  #000;
+        padding: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+
+    }
     
     header{
-        padding: 3.125rem;
-        background-color: #97BFB4;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex: 1.78rem;
+        padding: 0.875rem;
+        background-color: #DB2D43;
     }
-
+    .h1img{}
     nav{
         display: flex;
-        flex-direction: row;
-        background-color: #4F091D;
-
+        flex-wrap: wrap;
+        background-color: #005F99;
     }
+
     nav a{
         color: whitesmoke;
         padding:0.875rem 1.25rem;
         text-align: center;
         }
     nav a:hover{
-        background-color: #52303a;
+        background-color: #000;
     }
 
     .row{
@@ -46,12 +64,13 @@
         }
     aside{
         flex: 1.875rem;
-        background-color: #DD4A48;
+        background-image: linear-gradient(-25deg,#C060A1, #FFDCB4);
         padding: 0.875rem;
     }
+
     section{
         flex: 1.875rem;
-        background-color: #F5EEDC;
+        background-image: linear-gradient(#591679, #37525f ) ;
         padding: 0.875rem;
     }
     footer{
@@ -59,11 +78,11 @@
         text-align: center;
         background-color: #97BFB4;
     }
-    @media screen and (max-width: 43.75rem) {
+    @media screen and (min-width:25rem) and (max-width: 43.75rem) {
         nav, .row{
             flex-direction: column;
-        }
-    }
+            width: 100%;
+        }}
     /*Rotar imagenes
     .rotate{
         animation: rotation 9s infinite linear;
