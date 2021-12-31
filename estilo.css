@@ -18,6 +18,12 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #00005C;
     }
+    .ph2{
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1A5F7A;
+    }
     .p1{ display: flex;
         justify-content: center;
         background-color: #6A097D; /*37525f*/
@@ -27,7 +33,7 @@
     }
     .p2{ display: flex;
         justify-content: center;
-        background-color:  #DB2D43; /*37525f*/
+        background-color:  #086E7D; /*37525f*/
         border: .3rem solid  #000;
         padding: 0.3rem;
         font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +48,14 @@
         padding: 0.875rem;
         background-color: #DB2D43;
     }
-    .h1img{}
+    img{
+        max-width: 300px
+        ;
+    }
+    .h1img{
+        display: flex;
+        text-align: center;
+    }
     nav{
         display: flex;
         flex-wrap: wrap;
@@ -70,7 +83,7 @@
 
     section{
         flex: 1.875rem;
-        background-image: linear-gradient(#591679, #37525f ) ;
+        background-image: linear-gradient(-25deg,#FFC900, #FFF89A);
         padding: 0.875rem;
     }
     footer{
